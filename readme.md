@@ -1,6 +1,6 @@
 # Docker: Ubuntu, Nginx and PHP 7 Stack
 
-(For PHP 5.5, go to my old repo at [https://github.com/voduytuan/docker-nginx-php](https://github.com/voduytuan/docker-nginx-php))
+(For PHP 5.5, go to my old repo at [https://github.com/hoangthienan/docker-nginx-php](https://github.com/hoangthienan/docker-nginx-php))
 
 This is the basis for LEMP stack (minus MySQL). This is based on [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker) base Ubuntu image, which takes care of system issues which Docker's base Ubuntu image does not take care of, such as watching processes, logrotate, ssh server, cron and syslog-ng.
 
@@ -27,4 +27,6 @@ This will bind local port 80 to the container's port 80. This means you should b
 * You can mount a local directory to nginx log directory at `/var/log/nginx/`. Such as: `-v /path/to/local/log/dir:/var/log/nginx/`
 
 ---
-Credits: [https://github.com/fideloper/docker-nginx-php](https://github.com/fideloper/docker-nginx-php)
+Credits: 
+* [https://github.com/voduytuan/docker-nginx-php70](https://github.com/voduytuan/docker-nginx-php70)
+* [https://github.com/fideloper/docker-nginx-php](https://github.com/fideloper/docker-nginx-php)
